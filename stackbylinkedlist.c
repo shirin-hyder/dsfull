@@ -34,23 +34,6 @@ void push(int data)
         }
 }
 
-void pop()
-{
-        int item;
-        struct node *ptr;
-        if(head==NULL)
-        {
-                printf("underflow");
-        }
-        else
-        {
-                item=head->val;
-                ptr=head;
-                head=head->next;
-                free(ptr);
-                printf("item poped");
-        }
-}
 void display()
 {
         int i;
